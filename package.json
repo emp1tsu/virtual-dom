@@ -1,0 +1,36 @@
+{
+  "name": "virtual-dom",
+  "version": "1.0.0",
+  "description": "仮想DOM実装",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/empitsu0813/virtual-dom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/empitsu0813/virtual-dom/issues"
+  },
+  "homepage": "https://github.com/empitsu0813/virtual-dom#readme",
+  "dependencies": {
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.6",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.3.0",
+    "ts-node-dev": "^1.0.0-pre.40"
+  }
+}
